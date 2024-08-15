@@ -1,0 +1,16 @@
+{ 
+    "files.exclude": { 
+        "**/*.vhd.bak": true,
+        "**/*db": true,
+        "**/*output_files": true,
+        "**/*simulation": true,
+        "**/*.qsf": true,
+        "**/*.qpf": true,
+        "**/*.qws": true,
+        "**/*.rpt": true,
+        "**/*.summary": true,
+        "**/*.log": true,
+        "**/*c5_pin_model_dump.txt": true,
+    },
+    "ros.distro": "humble"
+}

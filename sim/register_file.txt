@@ -1,0 +1,234 @@
+Cycle : 1
+
+PC/R0 : 0
+
+Architecture Register File                          Physical Register File    
+
+R   | Data | tag | busy                             | Data | valid | busy 
+
+R0  |  0  |  0  |  0                                 0  |  0  |  0
+
+R1  |  1  |  0  |  0                                 0  |  0  |  0
+
+R2  |  2  |  0  |  0                                 0  |  0  |  0
+
+R3  |  3  |  0  |  0                                 0  |  0  |  0
+
+R4  |  4  |  0  |  0                                 0  |  0  |  0
+
+R5  |  5  |  0  |  0                                 0  |  0  |  0
+
+R6  |  6  |  0  |  0                                 0  |  0  |  0
+
+R7  |  7  |  0  |  0                                 0  |  0  |  0
+
+
+
+Cycle : 2
+
+PC/R0 : 2
+
+Architecture Register File                          Physical Register File    
+
+R   | Data | tag | busy                             | Data | valid | busy 
+
+R0  |  2  |  0  |  0                                 0  |  0  |  0
+
+R1  |  1  |  0  |  0                                 0  |  0  |  0
+
+R2  |  2  |  0  |  0                                 0  |  0  |  0
+
+R3  |  3  |  0  |  0                                 0  |  0  |  0
+
+R4  |  4  |  0  |  0                                 0  |  0  |  0
+
+R5  |  5  |  0  |  0                                 0  |  0  |  0
+
+R6  |  6  |  0  |  0                                 0  |  0  |  0
+
+R7  |  7  |  0  |  0                                 0  |  0  |  0
+
+
+
+Cycle : 3
+
+PC/R0 : 4
+
+Architecture Register File                          Physical Register File    
+
+R   | Data | tag | busy                             | Data | valid | busy 
+
+R0  |  4  |  0  |  0                                 0  |  0  |  0
+
+R1  |  1  |  0  |  0                                 0  |  0  |  0
+
+R2  |  2  |  0  |  0                                 0  |  0  |  0
+
+R3  |  3  |  0  |  0                                 0  |  0  |  0
+
+R4  |  4  |  0  |  0                                 0  |  0  |  0
+
+R5  |  5  |  0  |  0                                 0  |  0  |  0
+
+R6  |  6  |  0  |  0                                 0  |  0  |  0
+
+R7  |  7  |  0  |  0                                 0  |  0  |  0
+
+
+
+Cycle : 4
+
+PC/R0 : 6
+
+Architecture Register File                          Physical Register File    
+
+R   | Data | tag | busy                             | Data | valid | busy 
+
+R0  |  6  |  0  |  0                                 0  |  0  |  0
+
+R1  |  1  |  0  |  0                                 0  |  0  |  0
+
+R2  |  2  |  1  |  1                                 0  |  0  |  0
+
+R3  |  3  |  0  |  0                                 0  |  0  |  0
+
+R4  |  4  |  0  |  1                                 0  |  0  |  0
+
+R5  |  5  |  0  |  0                                 0  |  0  |  0
+
+R6  |  6  |  0  |  0                                 0  |  0  |  0
+
+R7  |  7  |  0  |  0                                 0  |  0  |  0
+
+
+
+Cycle : 5
+
+PC/R0 : 8
+
+Architecture Register File                          Physical Register File    
+
+R   | Data | tag | busy                             | Data | valid | busy 
+
+R0  |  8  |  0  |  0                                 0  |  0  |  0
+
+R1  |  1  |  0  |  0                                 0  |  0  |  0
+
+R2  |  2  |  1  |  1                                 0  |  0  |  0
+
+R3  |  3  |  0  |  0                                 0  |  0  |  0
+
+R4  |  4  |  0  |  1                                 0  |  0  |  0
+
+R5  |  5  |  0  |  0                                 0  |  0  |  0
+
+R6  |  6  |  0  |  0                                 0  |  0  |  0
+
+R7  |  7  |  0  |  0                                 0  |  0  |  0
+
+
+
+Cycle : 6
+
+PC/R0 : 10
+
+Architecture Register File                          Physical Register File    
+
+R   | Data | tag | busy                             | Data | valid | busy 
+
+R0  |  10  |  0  |  0                                 0  |  1  |  0
+
+R1  |  1  |  0  |  0                                 6  |  1  |  0
+
+R2  |  2  |  1  |  1                                 0  |  0  |  0
+
+R3  |  3  |  0  |  0                                 0  |  0  |  0
+
+R4  |  4  |  0  |  1                                 0  |  0  |  0
+
+R5  |  5  |  0  |  0                                 0  |  0  |  0
+
+R6  |  6  |  0  |  0                                 0  |  0  |  0
+
+R7  |  7  |  0  |  0                                 0  |  0  |  0
+
+
+
+Cycle : 7
+
+PC/R0 : 12
+
+Architecture Register File                          Physical Register File    
+
+R   | Data | tag | busy                             | Data | valid | busy 
+
+R0  |  12  |  0  |  0                                 0  |  1  |  0
+
+R1  |  1  |  0  |  0                                 6  |  1  |  0
+
+R2  |  2  |  1  |  1                                 0  |  0  |  0
+
+R3  |  3  |  0  |  0                                 0  |  0  |  0
+
+R4  |  4  |  0  |  1                                 0  |  0  |  0
+
+R5  |  5  |  0  |  0                                 0  |  0  |  0
+
+R6  |  6  |  0  |  0                                 0  |  0  |  0
+
+R7  |  7  |  0  |  0                                 0  |  0  |  0
+
+
+
+Cycle : 8
+
+PC/R0 : 14
+
+Architecture Register File                          Physical Register File    
+
+R   | Data | tag | busy                             | Data | valid | busy 
+
+R0  |  14  |  0  |  0                                 0  |  1  |  0
+
+R1  |  0  |  0  |  0                                 6  |  1  |  0
+
+R2  |  2  |  1  |  1                                 0  |  0  |  0
+
+R3  |  3  |  0  |  0                                 0  |  0  |  0
+
+R4  |  4  |  0  |  1                                 0  |  0  |  0
+
+R5  |  5  |  0  |  0                                 0  |  0  |  0
+
+R6  |  6  |  0  |  0                                 0  |  0  |  0
+
+R7  |  7  |  0  |  0                                 0  |  0  |  0
+
+
+
+Cycle : 9
+
+PC/R0 : 16
+
+Architecture Register File                          Physical Register File    
+
+R   | Data | tag | busy                             | Data | valid | busy 
+
+R0  |  16  |  0  |  0                                 0  |  1  |  0
+
+R1  |  0  |  0  |  0                                 6  |  1  |  0
+
+R2  |  6  |  1  |  1                                 0  |  0  |  0
+
+R3  |  3  |  0  |  0                                 0  |  0  |  0
+
+R4  |  4  |  0  |  1                                 0  |  0  |  0
+
+R5  |  5  |  0  |  0                                 0  |  0  |  0
+
+R6  |  6  |  0  |  0                                 0  |  0  |  0
+
+R7  |  7  |  0  |  0                                 0  |  0  |  0
+
+
+

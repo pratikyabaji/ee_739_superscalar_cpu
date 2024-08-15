@@ -1,0 +1,417 @@
+Analysis & Elaboration report for iitb_risc
+Mon Dec  4 17:05:35 2023
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Port Connectivity Checks: "reorder_buffer:inst_reorder_buffer"
+  6. Port Connectivity Checks: "load_store_pipeline:inst_load_store_pipeline"
+  7. Port Connectivity Checks: "arith_logic_pipeline:\arith_logic_pipeline:1:inst_arith_logic_pipeline"
+  8. Port Connectivity Checks: "arith_logic_pipeline:\arith_logic_pipeline:0:inst_arith_logic_pipeline|alu:inst_alu"
+  9. Port Connectivity Checks: "arith_logic_pipeline:\arith_logic_pipeline:0:inst_arith_logic_pipeline"
+ 10. Port Connectivity Checks: "reservation_station:inst_reservation_station"
+ 11. Port Connectivity Checks: "register_file:inst_register_file"
+ 12. Port Connectivity Checks: "bit16_adder:inst_pc_adder_2_bit16_adder"
+ 13. Analysis & Elaboration Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                      ;
++------------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Mon Dec  4 17:05:35 2023          ;
+; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                      ; iitb_risc                                      ;
+; Top-level Entity Name              ; iitb_risc                                      ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; N/A until Partition Merge                      ;
+;     Total combinational functions  ; N/A until Partition Merge                      ;
+;     Dedicated logic registers      ; N/A until Partition Merge                      ;
+; Total registers                    ; N/A until Partition Merge                      ;
+; Total pins                         ; N/A until Partition Merge                      ;
+; Total virtual pins                 ; N/A until Partition Merge                      ;
+; Total memory bits                  ; N/A until Partition Merge                      ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
+; Total PLLs                         ; N/A until Partition Merge                      ;
+; UFM blocks                         ; N/A until Partition Merge                      ;
+; ADC blocks                         ; N/A until Partition Merge                      ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                            ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M08DAF484C8G     ;                    ;
+; Top-level entity name                                            ; iitb_risc          ; iitb_risc          ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "reorder_buffer:inst_reorder_buffer" ;
++---------------+-------+----------+-----------------------------+
+; Port          ; Type  ; Severity ; Details                     ;
++---------------+-------+----------+-----------------------------+
+; mem_reg[1..0] ; Input ; Info     ; Stuck at VCC                ;
++---------------+-------+----------+-----------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "load_store_pipeline:inst_load_store_pipeline"                                              ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; op_code_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arith_logic_pipeline:\arith_logic_pipeline:1:inst_arith_logic_pipeline"                       ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; carry_flag_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; zero_flag_in   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; zero_flag_out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; carry_flag_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; is_branch      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arith_logic_pipeline:\arith_logic_pipeline:0:inst_arith_logic_pipeline|alu:inst_alu" ;
++----------+-------+----------+-----------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                           ;
++----------+-------+----------+-----------------------------------------------------------------------------------+
+; c[16..1] ; Input ; Info     ; Stuck at GND                                                                      ;
++----------+-------+----------+-----------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arith_logic_pipeline:\arith_logic_pipeline:0:inst_arith_logic_pipeline"                       ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; carry_flag_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; zero_flag_in   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; zero_flag_out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; carry_flag_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; is_branch      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reservation_station:inst_reservation_station"                                                             ;
++----------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                       ; Type   ; Severity ; Details                                                                             ;
++----------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; al_issue_enable            ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ls_issue_enable            ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; orignal_destination_tag_ls ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "register_file:inst_register_file" ;
++-----------------+-------+----------+-------------------------+
+; Port            ; Type  ; Severity ; Details                 ;
++-----------------+-------+----------+-------------------------+
+; pc_write_select ; Input ; Info     ; Stuck at GND            ;
+; arf_tag         ; Input ; Info     ; Stuck at GND            ;
+; rrf_tag[2]      ; Input ; Info     ; Stuck at GND            ;
++-----------------+-------+----------+-------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "bit16_adder:inst_pc_adder_2_bit16_adder" ;
++----------+-------+----------+---------------------------------------+
+; Port     ; Type  ; Severity ; Details                               ;
++----------+-------+----------+---------------------------------------+
+; b[15..3] ; Input ; Info     ; Stuck at GND                          ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                          ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                          ;
++----------+-------+----------+---------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Mon Dec  4 17:05:27 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off iitb_risc -c iitb_risc --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file iitb_risc.vhd
+    Info (12022): Found design unit 1: iitb_risc-behavioral File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 18
+    Info (12023): Found entity 1: iitb_risc File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file iitb_risc_tb.vhd
+    Info (12022): Found design unit 1: iitb_risc_tb-sim File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc_tb.vhd Line: 12
+    Info (12023): Found entity 1: iitb_risc_tb File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc_tb.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file components/ir_memory.vhd
+    Info (12022): Found design unit 1: ir_memory-behavioral File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_memory.vhd Line: 21
+    Info (12023): Found entity 1: ir_memory File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_memory.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file components/ir_fetch_buffer.vhd
+    Info (12022): Found design unit 1: ir_fetch_buffer-behavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_fetch_buffer.vhd Line: 26
+    Info (12023): Found entity 1: ir_fetch_buffer File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_fetch_buffer.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file components/ir_decoder.vhd
+    Info (12022): Found design unit 1: ir_decoder-behavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder.vhd Line: 31
+    Info (12023): Found entity 1: ir_decoder File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file components/ir_decoder_buffer.vhd
+    Info (12022): Found design unit 1: ir_decoder_buffer-behavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 44
+    Info (12023): Found entity 1: ir_decoder_buffer File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file components/register_file.vhd
+    Info (12022): Found design unit 1: register_file-behavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/register_file.vhd Line: 51
+    Info (12023): Found entity 1: register_file File: /home/pratikyabaji/Desktop/iitb_risc/components/register_file.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file components/reservation_station.vhd
+    Info (12022): Found design unit 1: reservation_station-behavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 62
+    Info (12023): Found entity 1: reservation_station File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 10
+Info (12021): Found 10 design units, including 5 entities, in source file components/arith_logic_pipeline/alu.vhd
+    Info (12022): Found design unit 1: add16-add_bhavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 39
+    Info (12022): Found design unit 2: add17-add_bhavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 58
+    Info (12022): Found design unit 3: sub-sub_bhavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 77
+    Info (12022): Found design unit 4: nand_ab-nand_bhavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 97
+    Info (12022): Found design unit 5: alu-behavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 102
+    Info (12023): Found entity 1: alu File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 6
+    Info (12023): Found entity 2: add16 File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 30
+    Info (12023): Found entity 3: add17 File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 49
+    Info (12023): Found entity 4: sub File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 68
+    Info (12023): Found entity 5: nand_ab File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 88
+Info (12021): Found 2 design units, including 1 entities, in source file components/arith_logic_pipeline.vhd
+    Info (12022): Found design unit 1: arith_logic_pipeline-behavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline.vhd Line: 35
+    Info (12023): Found entity 1: arith_logic_pipeline File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file components/load_store_pipeline.vhd
+    Info (12022): Found design unit 1: load_store_pipeline-behavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/load_store_pipeline.vhd Line: 29
+    Info (12023): Found entity 1: load_store_pipeline File: /home/pratikyabaji/Desktop/iitb_risc/components/load_store_pipeline.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file components/reorder_buffer.vhd
+    Info (12022): Found design unit 1: reorder_buffer-behavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/reorder_buffer.vhd Line: 35
+    Info (12023): Found entity 1: reorder_buffer File: /home/pratikyabaji/Desktop/iitb_risc/components/reorder_buffer.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file components/bit16_adder.vhd
+    Info (12022): Found design unit 1: bit16_adder-behavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/bit16_adder.vhd Line: 15
+    Info (12023): Found entity 1: bit16_adder File: /home/pratikyabaji/Desktop/iitb_risc/components/bit16_adder.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file components/data_memory.vhd
+    Info (12022): Found design unit 1: data_memory-behavioral File: /home/pratikyabaji/Desktop/iitb_risc/components/data_memory.vhd Line: 22
+    Info (12023): Found entity 1: data_memory File: /home/pratikyabaji/Desktop/iitb_risc/components/data_memory.vhd Line: 9
+Info (12021): Found 2 design units, including 0 entities, in source file iitb_risc_lib.vhd
+    Info (12022): Found design unit 1: iitb_risc_lib File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc_lib.vhd Line: 6
+    Info (12022): Found design unit 2: iitb_risc_lib-body File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc_lib.vhd Line: 45
+Info (12021): Found 2 design units, including 1 entities, in source file components/flags/zero_flag.vhd
+    Info (12022): Found design unit 1: zero_flag-behavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/flags/zero_flag.vhd Line: 31
+    Info (12023): Found entity 1: zero_flag File: /home/pratikyabaji/Desktop/iitb_risc/components/flags/zero_flag.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file components/flags/carry_flag.vhd
+    Info (12022): Found design unit 1: carry_flag-behavorial File: /home/pratikyabaji/Desktop/iitb_risc/components/flags/carry_flag.vhd Line: 31
+    Info (12023): Found entity 1: carry_flag File: /home/pratikyabaji/Desktop/iitb_risc/components/flags/carry_flag.vhd Line: 11
+Info (12127): Elaborating entity "iitb_risc" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at iitb_risc.vhd(88): object "orignal_destination_tag_ls_in_ls_pipeline" assigned a value but never read File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 88
+Warning (10036): Verilog HDL or VHDL warning at iitb_risc.vhd(96): object "zero_flag_out" assigned a value but never read File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 96
+Warning (10036): Verilog HDL or VHDL warning at iitb_risc.vhd(97): object "carry_flag_out" assigned a value but never read File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 97
+Warning (10036): Verilog HDL or VHDL warning at iitb_risc.vhd(103): object "is_branch" assigned a value but never read File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 103
+Info (12128): Elaborating entity "ir_memory" for hierarchy "ir_memory:inst_ir_memory" File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 121
+Warning (10540): VHDL Signal Declaration warning at ir_memory.vhd(23): used explicit default value for signal "IR_memory" because signal was never assigned a value File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_memory.vhd Line: 23
+Warning (10492): VHDL Process Statement warning at ir_memory.vhd(27): signal "IR_memory" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_memory.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at ir_memory.vhd(28): signal "IR_memory" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_memory.vhd Line: 28
+Warning (10492): VHDL Process Statement warning at ir_memory.vhd(30): signal "IR_memory" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_memory.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at ir_memory.vhd(31): signal "IR_memory" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_memory.vhd Line: 31
+Info (12128): Elaborating entity "ir_fetch_buffer" for hierarchy "ir_fetch_buffer:inst_ir_buffer" File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 129
+Warning (10492): VHDL Process Statement warning at ir_fetch_buffer.vhd(39): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_fetch_buffer.vhd Line: 39
+Warning (10492): VHDL Process Statement warning at ir_fetch_buffer.vhd(57): signal "ir_fetch_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_fetch_buffer.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at ir_fetch_buffer.vhd(58): signal "ir_fetch_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_fetch_buffer.vhd Line: 58
+Info (12128): Elaborating entity "ir_decoder" for hierarchy "ir_decoder:inst_ir_decoder" File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 141
+Info (12128): Elaborating entity "ir_decoder_buffer" for hierarchy "ir_decoder_buffer:inst_ir_decoder_buffer" File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 160
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(67): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 67
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(105): signal "ir_decoder_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 105
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(106): signal "ir_decoder_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 106
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(107): signal "ir_decoder_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 107
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(108): signal "ir_decoder_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 108
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(109): signal "ir_decoder_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 109
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(110): signal "ir_decoder_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 110
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(111): signal "ir_decoder_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 111
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(112): signal "ir_decoder_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 112
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(113): signal "ir_decoder_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 113
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(114): signal "ir_decoder_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 114
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(115): signal "ir_decoder_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 115
+Warning (10492): VHDL Process Statement warning at ir_decoder_buffer.vhd(116): signal "ir_decoder_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd Line: 116
+Info (12128): Elaborating entity "bit16_adder" for hierarchy "bit16_adder:inst_pc_adder_2_bit16_adder" File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 196
+Info (12128): Elaborating entity "register_file" for hierarchy "register_file:inst_register_file" File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 204
+Warning (10492): VHDL Process Statement warning at register_file.vhd(135): signal "destination_operand_in_valid" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/register_file.vhd Line: 135
+Warning (10492): VHDL Process Statement warning at register_file.vhd(136): signal "tag_pointer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/register_file.vhd Line: 136
+Warning (10492): VHDL Process Statement warning at register_file.vhd(145): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/register_file.vhd Line: 145
+Info (12128): Elaborating entity "reservation_station" for hierarchy "reservation_station:inst_reservation_station" File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 240
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(96): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 96
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(292): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 292
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(293): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 293
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(295): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 295
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(296): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 296
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(297): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 297
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(298): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 298
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(299): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 299
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(300): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 300
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(301): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 301
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(302): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 302
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(303): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 303
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(311): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 311
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(312): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 312
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(314): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 314
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(315): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 315
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(316): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 316
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(317): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 317
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(318): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 318
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(319): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 319
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(320): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 320
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(321): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 321
+Warning (10492): VHDL Process Statement warning at reservation_station.vhd(322): signal "reservation_station" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 322
+Warning (10631): VHDL Process Statement warning at reservation_station.vhd(248): inferring latch(es) for signal or variable "orignal_destination_tag_al", which holds its previous value in one or more paths through the process File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 248
+Warning (10631): VHDL Process Statement warning at reservation_station.vhd(248): inferring latch(es) for signal or variable "orignal_destination_tag_ls", which holds its previous value in one or more paths through the process File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 248
+Info (10041): Inferred latch for "orignal_destination_tag_ls[0][0]" at reservation_station.vhd(248) File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 248
+Info (10041): Inferred latch for "orignal_destination_tag_ls[0][1]" at reservation_station.vhd(248) File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 248
+Info (10041): Inferred latch for "orignal_destination_tag_ls[0][2]" at reservation_station.vhd(248) File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 248
+Info (10041): Inferred latch for "orignal_destination_tag_al[0][0]" at reservation_station.vhd(248) File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 248
+Info (10041): Inferred latch for "orignal_destination_tag_al[0][1]" at reservation_station.vhd(248) File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 248
+Info (10041): Inferred latch for "orignal_destination_tag_al[0][2]" at reservation_station.vhd(248) File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 248
+Info (10041): Inferred latch for "orignal_destination_tag_al[1][0]" at reservation_station.vhd(248) File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 248
+Info (10041): Inferred latch for "orignal_destination_tag_al[1][1]" at reservation_station.vhd(248) File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 248
+Info (10041): Inferred latch for "orignal_destination_tag_al[1][2]" at reservation_station.vhd(248) File: /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd Line: 248
+Info (12128): Elaborating entity "arith_logic_pipeline" for hierarchy "arith_logic_pipeline:\arith_logic_pipeline:0:inst_arith_logic_pipeline" File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 292
+Warning (10541): VHDL Signal Declaration warning at arith_logic_pipeline.vhd(31): used implicit default value for signal "is_branch" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at arith_logic_pipeline.vhd(72): signal "rrf_destination_tag_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline.vhd Line: 72
+Info (12128): Elaborating entity "alu" for hierarchy "arith_logic_pipeline:\arith_logic_pipeline:0:inst_arith_logic_pipeline|alu:inst_alu" File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at alu.vhd(187): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 187
+Info (12128): Elaborating entity "add16" for hierarchy "arith_logic_pipeline:\arith_logic_pipeline:0:inst_arith_logic_pipeline|alu:inst_alu|add16:inst_add" File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 152
+Info (12128): Elaborating entity "add17" for hierarchy "arith_logic_pipeline:\arith_logic_pipeline:0:inst_arith_logic_pipeline|alu:inst_alu|add17:inst_add_c" File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 159
+Info (12128): Elaborating entity "sub" for hierarchy "arith_logic_pipeline:\arith_logic_pipeline:0:inst_arith_logic_pipeline|alu:inst_alu|sub:inst_sub" File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 166
+Info (12128): Elaborating entity "nand_ab" for hierarchy "arith_logic_pipeline:\arith_logic_pipeline:0:inst_arith_logic_pipeline|alu:inst_alu|nand_ab:inst_nand" File: /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd Line: 173
+Info (12128): Elaborating entity "load_store_pipeline" for hierarchy "load_store_pipeline:inst_load_store_pipeline" File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 323
+Warning (10492): VHDL Process Statement warning at load_store_pipeline.vhd(40): signal "destination_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/load_store_pipeline.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at load_store_pipeline.vhd(44): signal "operand_2_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/load_store_pipeline.vhd Line: 44
+Warning (10492): VHDL Process Statement warning at load_store_pipeline.vhd(44): signal "imm6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/load_store_pipeline.vhd Line: 44
+Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:inst_data_memory" File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 343
+Warning (10492): VHDL Process Statement warning at data_memory.vhd(29): signal "data_memory" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/data_memory.vhd Line: 29
+Info (12128): Elaborating entity "reorder_buffer" for hierarchy "reorder_buffer:inst_reorder_buffer" File: /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd Line: 352
+Warning (10492): VHDL Process Statement warning at reorder_buffer.vhd(54): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pratikyabaji/Desktop/iitb_risc/components/reorder_buffer.vhd Line: 54
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 62 warnings
+    Info: Peak virtual memory: 876 megabytes
+    Info: Processing ended: Mon Dec  4 17:05:35 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:21
+
+

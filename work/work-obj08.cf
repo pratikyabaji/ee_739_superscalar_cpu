@@ -1,0 +1,15 @@
+v 4
+file "/home/pratikyabaji/Desktop/iitb_risc/" "components/arith_logic_pipeline/alu.vhd" "a9863e12a7a8df9f8bb18b87a93edc38869d3273" "20231204093522.030":
+  entity alu at 1( 0) + 0 on 13;
+  entity add16 at 25( 606) + 0 on 14;
+  architecture add_bhavorial of add16 at 39( 907) + 0 on 15;
+  entity add17 at 44( 1038) + 0 on 16;
+  architecture add_bhavorial of add17 at 58( 1339) + 0 on 17;
+  entity sub at 63( 1458) + 0 on 18;
+  architecture sub_bhavorial of sub at 77( 1755) + 0 on 19;
+  entity nand_ab at 83( 1885) + 0 on 20;
+  architecture nand_bhavorial of nand_ab at 97( 2193) + 0 on 21;
+  architecture behavorial of alu at 102( 2318) + 0 on 22;
+file "/home/pratikyabaji/Desktop/iitb_risc/" "iitb_risc_lib.vhd" "f3f43aa624059f861dad7c44b13fe7bdf2aacab9" "20231204093522.015":
+  package iitb_risc_lib at 1( 0) + 0 on 11 body;
+  package body iitb_risc_lib at 45( 1987) + 0 on 12;

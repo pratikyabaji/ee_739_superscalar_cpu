@@ -1,0 +1,943 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pratikyabaji/Desktop/iitb_risc/simulation/modelsim
+Eadd16
+Z1 w1701109305
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+!i122 1
+R0
+Z7 8/home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd
+Z8 F/home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd
+l0
+L30 1
+VgdX51:EelEING^>kjMK_f3
+!s100 ]9VCL7B_b`2Z6cF@4gCcV2
+Z9 OV;C;2020.1;71
+31
+Z10 !s110 1701688674
+!i10b 1
+Z11 !s108 1701688674.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd|
+Z13 !s107 /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline/alu.vhd|
+!i113 1
+Z14 o-93 -work work
+Z15 tExplicit 1 CvgOpt 0
+Aadd_bhavorial
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 add16 0 22 gdX51:EelEING^>kjMK_f3
+!i122 1
+l40
+L39 4
+V6enDH]KIEfh<TV?4PD<KE2
+!s100 lEz?NzcKg_gA;m1[maGJH1
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Eadd17
+R1
+R2
+R3
+R4
+R5
+R6
+!i122 1
+R0
+R7
+R8
+l0
+L49 1
+VGm7@@jh[m<NT21;K;BZ4H3
+!s100 9NOb3iiEHz9zGN1Keo09S0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Aadd_bhavorial
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 add17 0 22 Gm7@@jh[m<NT21;K;BZ4H3
+!i122 1
+l59
+L58 4
+VSz^bK=DPTmcDgm^ECZaIN2
+!s100 A?dgZ;Nh?hRlmL^8CQHRj3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ealu
+R1
+R2
+R3
+R4
+R5
+R6
+!i122 1
+R0
+R7
+R8
+l0
+L6 1
+VAzL5mR4DC>hG`?BnYgSIY2
+!s100 Z5YVGg_4<Q2bGRRoch;Aa3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Abehavorial
+R2
+R3
+R4
+R5
+R6
+Z16 DEx4 work 3 alu 0 22 AzL5mR4DC>hG`?BnYgSIY2
+!i122 1
+l151
+L102 121
+VG3an@VON7cmbCjzD7_Ug`0
+!s100 =7`JniGzDdQ[16]THfag[2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Earith_logic_pipeline
+Z17 w1701161988
+Z18 DPx4 work 13 iitb_risc_lib 0 22 LJFgjLe:<Fnh5:Vj`T9[k2
+R2
+R3
+R4
+R5
+R6
+!i122 12
+R0
+Z19 8/home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline.vhd
+Z20 F/home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline.vhd
+l0
+L9 1
+Vc_DJhee`dgD0>AYzd?8Dm3
+!s100 zn^llS?3I<Va<mY^cozi]0
+R9
+31
+R10
+!i10b 1
+R11
+Z21 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline.vhd|
+Z22 !s107 /home/pratikyabaji/Desktop/iitb_risc/components/arith_logic_pipeline.vhd|
+!i113 1
+R14
+R15
+Abehavorial
+R16
+R18
+R2
+R3
+R4
+R5
+R6
+Z23 DEx4 work 20 arith_logic_pipeline 0 22 c_DJhee`dgD0>AYzd?8Dm3
+!i122 12
+l48
+L35 59
+VbiVj@HLRT_XD>@G2aM?XR0
+!s100 QgH8:YeZhQ0F4mA3ZF?`a0
+R9
+31
+R10
+!i10b 1
+R11
+R21
+R22
+!i113 1
+R14
+R15
+Ebit16_adder
+Z24 w1699692757
+R2
+R3
+R4
+R5
+R6
+!i122 2
+R0
+Z25 8/home/pratikyabaji/Desktop/iitb_risc/components/bit16_adder.vhd
+Z26 F/home/pratikyabaji/Desktop/iitb_risc/components/bit16_adder.vhd
+l0
+L6 1
+Vz`bkdkdJN=]nWFGnJTfK[2
+!s100 Z[ln<KYE1MEjOPe]OM[A62
+R9
+31
+R10
+!i10b 1
+R11
+Z27 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/components/bit16_adder.vhd|
+Z28 !s107 /home/pratikyabaji/Desktop/iitb_risc/components/bit16_adder.vhd|
+!i113 1
+R14
+R15
+Abehavorial
+R2
+R3
+R4
+R5
+R6
+Z29 DEx4 work 11 bit16_adder 0 22 z`bkdkdJN=]nWFGnJTfK[2
+!i122 2
+l16
+L15 4
+Vl:=PWPH5mFMAN6eYfKjdK3
+!s100 oB2_HdV1hU^5NB@`dhigD2
+R9
+31
+R10
+!i10b 1
+R11
+R27
+R28
+!i113 1
+R14
+R15
+Edata_memory
+Z30 w1699517728
+R18
+R2
+R3
+R4
+R5
+R6
+!i122 11
+R0
+Z31 8/home/pratikyabaji/Desktop/iitb_risc/components/data_memory.vhd
+Z32 F/home/pratikyabaji/Desktop/iitb_risc/components/data_memory.vhd
+l0
+L9 1
+V6H7K@T:0M=gRoT7?X6_XE1
+!s100 `NiFoA[IQ[lSRWmec<SVR0
+R9
+31
+R10
+!i10b 1
+R11
+Z33 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/components/data_memory.vhd|
+Z34 !s107 /home/pratikyabaji/Desktop/iitb_risc/components/data_memory.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R18
+R2
+R3
+R4
+R5
+R6
+Z35 DEx4 work 11 data_memory 0 22 6H7K@T:0M=gRoT7?X6_XE1
+!i122 11
+l26
+L22 19
+V6n1F@?kTVggI0<lgT[@RW2
+!s100 U;FBG^4`P:XZC?8]YRa=M1
+R9
+31
+R10
+!i10b 1
+R11
+R33
+R34
+!i113 1
+R14
+R15
+Eiitb_risc
+Z36 w1701688515
+R18
+R2
+R3
+R4
+R6
+R5
+!i122 13
+R0
+Z37 8/home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd
+Z38 F/home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd
+l0
+Z39 L10 1
+VA_47aeLPBF^Jk_U?2Oz2D3
+!s100 fdVDF58zWhH]Nf<9]lz>;3
+R9
+31
+R10
+!i10b 1
+R11
+Z40 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd|
+Z41 !s107 /home/pratikyabaji/Desktop/iitb_risc/iitb_risc.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+Z42 DEx4 work 14 reorder_buffer 0 22 hIBJ9g6mLnf9Cb5CG:US:2
+R35
+Z43 DEx4 work 19 load_store_pipeline 0 22 `]W2YLE^kEzbV;^9LB[CB2
+R23
+Z44 DEx4 work 19 reservation_station 0 22 PT=iIN2UDTP5?dnTCZWZa3
+Z45 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z46 DEx4 work 13 register_file 0 22 <RQ3a>@d>zh1b4Y8TfXeb0
+R29
+Z47 DEx4 work 17 ir_decoder_buffer 0 22 J9^U5QJaWA:UL5hgRlHJ;1
+Z48 DEx4 work 10 ir_decoder 0 22 J23B88DAjeBhSKC_`T8o;1
+Z49 DEx4 work 15 ir_fetch_buffer 0 22 aX[3^WXXboCnUfajnV[OE0
+Z50 DEx4 work 9 ir_memory 0 22 K<NIO]<IQaYVJA2UO`XoK3
+R18
+R2
+R3
+R4
+R6
+R5
+Z51 DEx4 work 9 iitb_risc 0 22 A_47aeLPBF^Jk_U?2Oz2D3
+!i122 13
+l120
+L18 540
+V7iCz`n<P6ng:nmi9MbbM[1
+!s100 VEJ3EoZN_7ZkXMJEbg9f]2
+R9
+31
+R10
+!i10b 1
+R11
+R40
+R41
+!i113 1
+R14
+R15
+Piitb_risc_lib
+R3
+R2
+R5
+R4
+!i122 0
+Z52 w1701671936
+R0
+Z53 8/home/pratikyabaji/Desktop/iitb_risc/iitb_risc_lib.vhd
+Z54 F/home/pratikyabaji/Desktop/iitb_risc/iitb_risc_lib.vhd
+l0
+L6 1
+VLJFgjLe:<Fnh5:Vj`T9[k2
+!s100 BXSG?m=FVLC^<VE5C7Ef61
+R9
+31
+b1
+R10
+!i10b 1
+Z55 !s108 1701688673.000000
+Z56 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/iitb_risc_lib.vhd|
+Z57 !s107 /home/pratikyabaji/Desktop/iitb_risc/iitb_risc_lib.vhd|
+!i113 1
+R14
+R15
+Bbody
+R18
+R3
+R2
+R5
+R4
+!i122 0
+l0
+L45 1
+V7I2LUW;;[BjIAJZ[6_:Z;2
+!s100 ]TV]iQJ`zNbh4jf3lhS453
+R9
+31
+R10
+!i10b 1
+R55
+R56
+R57
+!i113 1
+R14
+R15
+Eiitb_risc_tb
+Z58 w1701150256
+R18
+R2
+R3
+R4
+R5
+R6
+!i122 14
+R0
+Z59 8/home/pratikyabaji/Desktop/iitb_risc/iitb_risc_tb.vhd
+Z60 F/home/pratikyabaji/Desktop/iitb_risc/iitb_risc_tb.vhd
+l0
+L9 1
+V][<NF5Y=di9:^Bb7E6djN0
+!s100 C`TT`7J3CNCR3>8a1Ef6M3
+R9
+31
+R10
+!i10b 1
+R11
+Z61 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/iitb_risc_tb.vhd|
+!s107 /home/pratikyabaji/Desktop/iitb_risc/iitb_risc_tb.vhd|
+!i113 1
+R14
+R15
+Asim
+R51
+R18
+R2
+R3
+R4
+R5
+R6
+DEx4 work 12 iitb_risc_tb 0 22 ][<NF5Y=di9:^Bb7E6djN0
+!i122 14
+l19
+L12 36
+V2F5ZgAeP0JjJX;`QfQD>C3
+!s100 EOGFa6V@Cbf7U7PP0GNC]0
+R9
+31
+R10
+!i10b 1
+R11
+R61
+Z62 !s107 /home/pratikyabaji/Desktop/iitb_risc/iitb_risc_tb.vhd|
+!i113 1
+R14
+R15
+Eir_decoder
+Z63 w1701151059
+R18
+R2
+R3
+R4
+R5
+R6
+!i122 10
+R0
+Z64 8/home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder.vhd
+Z65 F/home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder.vhd
+l0
+L9 1
+VJ23B88DAjeBhSKC_`T8o;1
+!s100 dmdei:3gXbf0k4G5f]DPj2
+R9
+31
+R10
+!i10b 1
+R11
+Z66 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder.vhd|
+Z67 !s107 /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder.vhd|
+!i113 1
+R14
+R15
+Abehavorial
+R18
+R2
+R3
+R4
+R5
+R6
+R48
+!i122 10
+l33
+L31 36
+Vef65J3?T9c8>2f0kDPn:S3
+!s100 c1no7OFN=c]z]E`AMX55?3
+R9
+31
+R10
+!i10b 1
+R11
+R66
+R67
+!i113 1
+R14
+R15
+Eir_decoder_buffer
+Z68 w1699710599
+R18
+R2
+R3
+R4
+R5
+R6
+!i122 9
+R0
+Z69 8/home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd
+Z70 F/home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd
+l0
+L9 1
+VJ9^U5QJaWA:UL5hgRlHJ;1
+!s100 IklPe@?SXX:]Sg3O_3lZ?3
+R9
+31
+R10
+!i10b 1
+R11
+Z71 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd|
+Z72 !s107 /home/pratikyabaji/Desktop/iitb_risc/components/ir_decoder_buffer.vhd|
+!i113 1
+R14
+R15
+Abehavorial
+R18
+R2
+R3
+R4
+R5
+R6
+R47
+!i122 9
+l64
+L44 76
+VSjfKFF8lZ<Chcc=FcD4C51
+!s100 gII@8:dHfYD9V4nW;a3Zm3
+R9
+31
+R10
+!i10b 1
+R11
+R71
+R72
+!i113 1
+R14
+R15
+Eir_fetch_buffer
+Z73 w1701151003
+R18
+R2
+R3
+R4
+R6
+R5
+!i122 8
+R0
+Z74 8/home/pratikyabaji/Desktop/iitb_risc/components/ir_fetch_buffer.vhd
+Z75 F/home/pratikyabaji/Desktop/iitb_risc/components/ir_fetch_buffer.vhd
+l0
+R39
+VaX[3^WXXboCnUfajnV[OE0
+!s100 5D_SWUf]WcNO4Oi=B@GHV1
+R9
+31
+R10
+!i10b 1
+R11
+Z76 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/components/ir_fetch_buffer.vhd|
+Z77 !s107 /home/pratikyabaji/Desktop/iitb_risc/components/ir_fetch_buffer.vhd|
+!i113 1
+R14
+R15
+Abehavorial
+R18
+R2
+R3
+R4
+R6
+R5
+R49
+!i122 8
+l36
+L26 36
+VKW3OlW>AMNe@CK:m4D<0c3
+!s100 ObJinRVIe1kNXaOeZ8JE21
+R9
+31
+R10
+!i10b 1
+R11
+R76
+R77
+!i113 1
+R14
+R15
+Eir_memory
+Z78 w1701161529
+R18
+R2
+R3
+R4
+R5
+R6
+!i122 7
+R0
+Z79 8/home/pratikyabaji/Desktop/iitb_risc/components/ir_memory.vhd
+Z80 F/home/pratikyabaji/Desktop/iitb_risc/components/ir_memory.vhd
+l0
+L9 1
+VK<NIO]<IQaYVJA2UO`XoK3
+!s100 W7QooDKaJ2hlh]8B7YUeo0
+R9
+31
+R10
+!i10b 1
+R11
+Z81 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/components/ir_memory.vhd|
+Z82 !s107 /home/pratikyabaji/Desktop/iitb_risc/components/ir_memory.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R18
+R2
+R3
+R4
+R5
+R6
+R50
+!i122 7
+l24
+L21 12
+V5@=VefHlnHC^oQ[OFfXJm3
+!s100 :N?doj[hi42<gU>Y_lVhZ1
+R9
+31
+R10
+!i10b 1
+R11
+R81
+R82
+!i113 1
+R14
+R15
+Eload_store_pipeline
+Z83 w1701688442
+R18
+R2
+R3
+R4
+R5
+R6
+!i122 6
+R0
+Z84 8/home/pratikyabaji/Desktop/iitb_risc/components/load_store_pipeline.vhd
+Z85 F/home/pratikyabaji/Desktop/iitb_risc/components/load_store_pipeline.vhd
+l0
+L9 1
+V`]W2YLE^kEzbV;^9LB[CB2
+!s100 @kZJXkkJR8X0<3:0G6BLb0
+R9
+31
+R10
+!i10b 1
+R11
+Z86 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/components/load_store_pipeline.vhd|
+Z87 !s107 /home/pratikyabaji/Desktop/iitb_risc/components/load_store_pipeline.vhd|
+!i113 1
+R14
+R15
+Abehavorial
+R18
+R2
+R3
+R4
+R5
+R6
+R43
+!i122 6
+l30
+L29 20
+Vz9DYzCgRWif>KiV6SA?cZ3
+!s100 ^3]j_4UPh41ZGJI7CKa[Z3
+R9
+31
+R10
+!i10b 1
+R11
+R86
+R87
+!i113 1
+R14
+R15
+Enand_ab
+R1
+R2
+R3
+R4
+R5
+R6
+!i122 1
+R0
+R7
+R8
+l0
+L88 1
+VeF4FWA3T<3e1i`_iPoeM@3
+!s100 N4Z?IYbE?@TU`:Nm>CC>22
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Anand_bhavorial
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 nand_ab 0 22 eF4FWA3T<3e1i`_iPoeM@3
+!i122 1
+l98
+L97 4
+VE`SYooh]B;N:<;9Nmn[JP3
+!s100 P`Mh4DcWiRSa[AW7c4GEm2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Eregister_file
+Z88 w1701688653
+R18
+R2
+R3
+R4
+R6
+R45
+R5
+!i122 5
+R0
+Z89 8/home/pratikyabaji/Desktop/iitb_risc/components/register_file.vhd
+Z90 F/home/pratikyabaji/Desktop/iitb_risc/components/register_file.vhd
+l0
+L11 1
+V<RQ3a>@d>zh1b4Y8TfXeb0
+!s100 <ioQ18Cbj0kR4L4G3d7:A1
+R9
+31
+R10
+!i10b 1
+R11
+Z91 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/components/register_file.vhd|
+Z92 !s107 /home/pratikyabaji/Desktop/iitb_risc/components/register_file.vhd|
+!i113 1
+R14
+R15
+Abehavorial
+R18
+R2
+R3
+R4
+R6
+R45
+R5
+R46
+!i122 5
+l81
+L51 209
+V10SY?2>@G:KOP<T:OGFGd1
+!s100 n<E:>8SM8FH=UOo;=M0`k3
+R9
+31
+R10
+!i10b 1
+R11
+R91
+R92
+!i113 1
+R14
+R15
+Ereorder_buffer
+Z93 w1701674666
+R18
+R2
+R3
+R4
+R6
+R5
+!i122 4
+R0
+Z94 8/home/pratikyabaji/Desktop/iitb_risc/components/reorder_buffer.vhd
+Z95 F/home/pratikyabaji/Desktop/iitb_risc/components/reorder_buffer.vhd
+l0
+R39
+VhIBJ9g6mLnf9Cb5CG:US:2
+!s100 8zT1V:K]D1XOfL3G^;:8G1
+R9
+31
+R10
+!i10b 1
+R11
+Z96 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/components/reorder_buffer.vhd|
+Z97 !s107 /home/pratikyabaji/Desktop/iitb_risc/components/reorder_buffer.vhd|
+!i113 1
+R14
+R15
+Abehavorial
+R18
+R2
+R3
+R4
+R6
+R5
+R42
+!i122 4
+l51
+L35 102
+V8:[i<2MU>VKmim35D2a]R3
+!s100 c:PPYez`Mz9_OZT`lQX=:2
+R9
+31
+R10
+!i10b 1
+R11
+R96
+R97
+!i113 1
+R14
+R15
+Ereservation_station
+Z98 w1701674692
+R18
+R2
+R3
+R4
+R6
+R5
+!i122 3
+R0
+Z99 8/home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd
+Z100 F/home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd
+l0
+R39
+VPT=iIN2UDTP5?dnTCZWZa3
+!s100 j7][l5fgoaO?[dZXd9Sz]3
+R9
+31
+R10
+!i10b 1
+R11
+Z101 !s90 -reportprogress|300|-93|-work|work|/home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd|
+Z102 !s107 /home/pratikyabaji/Desktop/iitb_risc/components/reservation_station.vhd|
+!i113 1
+R14
+R15
+Abehavorial
+R18
+R2
+R3
+R4
+R6
+R5
+R44
+!i122 3
+l90
+L62 312
+VcE@DW>EOUzLh[mZmQR9T[2
+!s100 V<Y<RF[UG]XamFRJmfMQm1
+R9
+31
+R10
+!i10b 1
+R11
+R101
+R102
+!i113 1
+R14
+R15
+Esub
+R1
+R2
+R3
+R4
+R5
+R6
+!i122 1
+R0
+R7
+R8
+l0
+L68 1
+VHM;SgIW5zIQI22klATZ4e1
+!s100 _e<OEg2djVd9Rj4zibkC]2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Asub_bhavorial
+R2
+R3
+R4
+R5
+R6
+DEx4 work 3 sub 0 22 HM;SgIW5zIQI22klATZ4e1
+!i122 1
+l78
+L77 4
+VCBe[[b9HaTfh0[F;ezQFl0
+!s100 [SJdRQZG`MQ^?5L0dnWlz2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
